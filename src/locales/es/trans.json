@@ -1,0 +1,82 @@
+{
+  "login": {
+    "header": "Anmeldung zum Konto",
+    "subHeader": "Bitte melden Sie sich bei Ihrem Konto an und beginnen Sie das Abenteuer.",
+    "form": {
+      "label": {
+        "username": "Benutzername",
+        "password": "Passwort"
+      },
+      "placeHolder": {
+        "username": "Bitte geben Sie Ihren Benutzernamen ein",
+        "password": "Bitte geben Sie Ihr Passwort ein"
+      },
+      "text": {
+        "forgetPassword": "Passwort vergessen?",
+        "rememberMe": "Erinnere dich an mich",
+        "select": "Sprache auswählen",
+        "leftH": "Willkommen zurück bei",
+        "leftH1": "unserer Gemeinschaft",
+        "leftH2": "Erfahren Sie, wie Sie die Zwei-Faktor-Authentifizierung in Joomla verwalten. Die Zwei-Faktor-Authentifizierung in Joomla ist eine sehr beliebte Sicherheitspraktik.",
+        "leftH3": "Mehr als 2.000 Menschen haben sich uns angeschlossen, jetzt sind Sie dran"
+      },
+      "button": {
+        "login": "Anmeldung zum Konto",
+        "noAcc": "Sie haben noch kein Konto?",
+        "noAccc": "Registrieren"
+      }
+    }
+  },
+
+  "user": {
+    "form": {
+      "label": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "username": "Username",
+        "email": "Email",
+        "phone": "Phone",
+        "country": "Country",
+        "testingOffice": "Testing Office",
+        "userGroup": "User Group",
+        "role": "Role",
+        "profileImage": "Profile Image",
+        "signature": "Signature",
+        "password": "Password"
+      },
+      "placeholder": {
+        "email": "Please enter your email",
+        "phone": "Please enter your phone number"
+      },
+      "button": {
+        "submit": "Submit",
+        "backToList": "Back to List"
+      }
+    }
+  },
+  "header": {
+    "label": {
+      "welcome": "Willkommen",
+      "today": "Heute"
+    },
+    "language": {
+      "english": "Englisch",
+      "german": "Deutsch"
+    }
+  },
+  "menusidebar": {
+    "label": {
+      "dashboard": "Armaturenbrett",
+      "users": "Benutzer",
+      "testingoffice": "Testing Office",
+      "auftraggeber": "Auftraggeber(Clients)",
+      "systems": "Systems",
+      "inspection": "Inspection",
+      "laboratory": "Laboratory"
+    }
+  },
+  "footer": {
+    "version": "Version",
+    "copyright": "All rights reserved."
+  }
+}

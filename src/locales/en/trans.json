@@ -1,0 +1,284 @@
+{
+  "login": {
+    "header": "Login to Account",
+    "subHeader": "Please sign-in to your account and start the adventure.",
+    "form": {
+      "label": {
+        "username": "Username",
+        "password": "Password"
+      },
+      "placeHolder": {
+        "username": "Please enter your username",
+        "password": "Please enter your password"
+      },
+      "text": {
+        "forgetPassword": "Forgot Password?",
+        "rememberMe": "Remember Me",
+        "select": "Select Language",
+        "leftH": "Welcome back to",
+        "leftH1": "our community",
+        "leftH2": "Discover how to manage Two-Factor Authentication in Joomla. The two-factor authentication in Joomla is a very popular security practice.",
+        "leftH3": " More than 2k people joined us, it's your turn"
+
+      },
+      "button": {
+        "login": "Login to account",
+        "noAcc": "Don't have an account?",
+        "noAccc": "Register"
+      }
+    }
+  },
+
+  "resetPassword": {
+    "header": "Set New Password",
+    "form": {
+      "label": {
+        "newPassword": "New Password",
+        "confirmPassword": "Confirm Password"
+      },
+      "placeHolder": {
+        "newPassword": "Please enter your new password",
+        "confirmPassword": "Please confirm your new password"
+      },
+      "button": {
+        "resetPassword": "Reset Password"
+      }
+    }
+  },
+
+  "forgetPassword": {
+    "labels": {
+      "header": "Reset password"
+    },
+    "form": {
+      "label": {
+        "username": "Username"
+      },
+      "placeHolder": {
+        "username": "Please enter your username"
+      },
+      "text": {
+        "forgotPassword": "Forgot Password?",
+        "login": "Login"
+      },
+      "button": {
+        "forgotPassword": "Forgot Password",
+        "login": "Login"
+      }
+    },
+    "button": "Send Reset Link",
+    "login_button": "Back to Login"
+  },
+
+  "changePassword": {
+    "form": {
+      "label": {
+        "oldPassword": "Old Password",
+        "newPassword": "New Password",
+        "confirmPassword": "Confirm Password"
+      },
+      "placeHolder": {
+        "oldPassword": "Enter your old password",
+        "newPassword": "Enter your new password",
+        "confirmPassword": "Confirm your new password"
+      },
+      "button": {
+        "changePassword": "Change Password",
+        "cancel": "Cancel"
+      }
+    }
+  },
+
+  "commonMaster": {
+    "list": {
+      "Actions": "Actions"
+    },
+    "form": {
+      "label": {
+        "attributeType": "Attribute Type",
+        "attributeCode": "Attribute Code",
+        "attributeText": "Attribute Text"
+      },
+      "placeHolder": {
+        "attributeType": "Select attribute type",
+        "attributeCode": "Enter attribute code",
+        "attributeText": "Enter attribute text"
+      },
+      "button": {
+        "submit": "Submit",
+        "cancel": "Cancel"
+      }
+    }
+  },
+
+  "testingoffice": {
+    "list": {
+      "Actions": "Actions"
+    },
+    "form": {
+      "label": {
+        "testingOfficeName": "Testing Office Name",
+        "testingOfficeNumber": "Testing Office Number",
+        "address": {
+          "street1": "Address 2",
+          "street2": "Street, Hsnr.",
+          "postcode": "Postcode",
+          "location": "Location"
+        },
+        "countryId": "Country",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "phone": "Phone",
+        "email": "Email",
+        "remarks": "Remarks",
+        "Field1": "Field 1",
+        "ShowBusinessDeclarationinReport": "Show Bussiness Declaration",
+        "showBusinessDeclaration": "Bussiness Declaration",
+        "yes": "Yes",
+        "no": "No",
+        "Status": "Status"
+      },
+      "placeholder": {
+        "email": "Please enter your email",
+        "phone": "Please enter your phone number"
+      },
+      "button": {
+        "submit": "Submit",
+        "cancel": "Cancel"
+      }
+    }
+  },
+
+  "client": {
+    "list": {
+      "actions": "Actions"
+    },
+    "form": {
+      "label": {
+        "testingOfficeId": "Testing Office",
+        "clientName": "Client Name",
+        "clientNumber": "Client Number",
+        "clientCountryId": "Client Country",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "phone": "Phone",
+        "email": "Email",
+        "remarks": "Remarks",
+        "field1": "Field 1",
+        "field2": "Field 2",
+        "field3": "Field 3",
+        "address_Location": "Location",
+        "address_PostCode": "Post Code",
+        "address_Street1": "Address 2",
+        "address_Street2": "Street, Hsnr.",
+        "status": "Status"
+      },
+      "placeholder": {
+        "email": "Please enter your email",
+        "phone": "Please enter your phone number"
+      },
+      "button": {
+        "submit": "Submit",
+        "cancel": "Cancel"
+      }
+    }
+  },
+
+  "location": {
+    "list": {
+      "actions": "Actions"
+    },
+    "form": {
+      "label": {
+        "locationName": "Location Name",
+        "clientId": "Client",
+        "countryId": "Country",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "phone": "Phone",
+        "email": "Email",
+        "remarks": "Remarks",
+        "field1": "Field 1",
+        "field2": "Field 2",
+        "field3": "Field 3",
+        "field4": "Field 4",
+        "address_Location": "Location",
+        "address_PostCode": "Post Code",
+        "address_Street1": "Address2",
+        "address_Street2": "Address3",
+        "status": "Status"
+      },
+      "placeholder": {
+        "email": "Please enter your email",
+        "phone": "Please enter your phone number"
+      },
+      "button": {
+        "submit": "Submit",
+        "cancel": "Cancel"
+      }
+    }
+  },
+
+  "user": {
+    "list": {
+      "Actions": "Actions"
+    },
+    "form": {
+      "label": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "username": "Username",
+        "email": "Email",
+        "phone": "Phone",
+        "country": "Country",
+        "testingOffice": "Testing Office",
+        "userGroup": "User Group",
+        "role": "Role",
+        "profileImage": "Profile Image",
+        "signature": "Signature",
+        "password": "Password",
+        "CertificateTypeId": "Certificate Type",
+        "IssueDate": "Issue Date",
+        "ExpiryDate": "Expiry Date",
+        "Attachment1": "Attachment1",
+        "Attachment2": "Attachment2",
+        "Attachment3": "Attachment3"
+      },
+      "placeholder": {
+        "email": "Please enter your email",
+        "phone": "Please enter your phone number"
+      },
+      "button": {
+        "submit": "Submit",
+        "cancel": "Cancel"
+      }
+    }
+  },
+
+  "header": {
+    "label": {
+      "welcome": "Welcome",
+      "today": "Today"
+    },
+    "language": {
+      "english": "English",
+      "german": "German"
+    }
+  },
+  "menusidebar": {
+    "label": {
+      "Dashboard": "Dashboard",
+      "Users": "Users",
+      "Testing Office": "Testing Office",
+      "Clients": "Clients",
+      "locations": "Locations",
+      "systems": "Systems",
+      "inspection": "Inspection",
+      "laboratory": "Laboratory"
+    }
+  },
+  "footer": {
+    "version": "Version",
+    "copyright": "All rights reserved."
+  }
+}
