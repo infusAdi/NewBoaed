@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 import classNames from "classnames";
 import { Dropdown, Button, Offcanvas, Alert } from "react-bootstrap";
 import SimpleBar from "simplebar-react";
@@ -25,6 +25,8 @@ import ToggleNavbar from "../Toggle/Navbar";
 
 import { useLayout, useLayoutUpdate } from "./../LayoutProvider";
 import { Navigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { logout } from "../../../reduxStore/reducer/authReducer";
 
 function QuickNav({ className, ...props }) {
   const compClass = classNames({
@@ -70,9 +72,15 @@ function Header() {
   const handleLogout = () => {
     // console.log("hello");
     localStorage.removeItem("authToken");
-    Navigate("/auths/auth-login"); 
-  };
+    localStorage.removeItem("UserName");
 
+    Navigate("/auths/auth-login")
+  };
+  // const dispatch = useDispatch();
+  // const handleLogout = () => {
+  //   localStorage.removeItem("persist:root");
+  //   dispatch(logout());
+  // };
   return (
     <>
       <div className={compClass}>
@@ -94,7 +102,7 @@ function Header() {
             </nav>
             <div className="nk-header-tools">
               <QuickNav>
-                <Dropdown as={QuickNavItem}>
+                {/* <Dropdown as={QuickNavItem}>
                   <Dropdown.Toggle
                     variant="zoom"
                     size="sm"
@@ -197,8 +205,8 @@ function Header() {
                       </ul>
                     </div>
                   </Dropdown.Menu>
-                </Dropdown>
-                <QuickNavItem>
+                </Dropdown> */}
+                {/* <QuickNavItem>
                   <button
                     className="btn-icon btn btn-zoom btn-sm d-sm-none"
                     onClick={handleOffcanvasShow}
@@ -211,7 +219,8 @@ function Header() {
                   >
                     <Icon name="bell"></Icon>
                   </button>
-                </QuickNavItem>
+                </QuickNavItem> */}
+
                 <Dropdown as={QuickNavItem}>
                   <Dropdown.Toggle bsPrefix as={CustomDropdownToggle}>
                     <div className="d-inline-flex d-sm-none">

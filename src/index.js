@@ -7,12 +7,15 @@ import './i18n';
 import "./assets/scss/style.scss";
 
 import reportWebVitals from './reportWebVitals';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
+      <ToastContainer/>
     </BrowserRouter>
   </React.StrictMode>
 );

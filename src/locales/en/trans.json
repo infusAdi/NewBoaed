@@ -19,7 +19,6 @@
         "leftH1": "our community",
         "leftH2": "Discover how to manage Two-Factor Authentication in Joomla. The two-factor authentication in Joomla is a very popular security practice.",
         "leftH3": " More than 2k people joined us, it's your turn"
-
       },
       "button": {
         "login": "Login to account",
@@ -91,7 +90,10 @@
 
   "commonMaster": {
     "list": {
-      "Actions": "Actions"
+      "Actions": "Actions",
+      "select": "Select",
+      "Active": "Active",
+      "Inactive": "Inactive"
     },
     "form": {
       "label": {
@@ -280,5 +282,95 @@
   "footer": {
     "version": "Version",
     "copyright": "All rights reserved."
+  },
+  "AlertMessages": {
+    "LOGIN_SUCCESS": "Welcome to Dashboard "
+  },
+  "message": {
+    "emptyList": "No Record Found"
+  },
+  "pagination": {
+    "showing": "Showing",
+    "to": "to",
+    "of": "of",
+    "entries": "entries"
+  },
+  "AlertMessages": {
+    "LOGIN_SUCCESS": "You have been logged in succefully",
+    "LOGIN_FAILED": "Please enter correct username or password",
+    "USER_INACTIVE": "Your account is inactive. Please contact admin.",
+    "NETWORK_ISSUE": "Somthing went wrong!",
+
+    "FORGOT_SUCCESS": "Your reset password link has been sent successfully. Please check your email!",
+    "FORGOT_EMAIL_ERROR": "Sorry! we didn't find email address for your account, Please contact Admin.",
+    "FORGOT_USERNAME_ERROR": "Sorry! The enter username is not exist",
+
+    "PASSWORD_RESET_SUCESS": "Your password has been reset successfully",
+    "PASSWORD_RESET_ERROR": "Your password has not been reset! Please contact admin.",
+    "RESET_LINK_SENT": "Reset password link has been sent successfully to user's email.",
+    "OLD_PASSWORD_ERROR": "Please enter correct old password.",
+
+    "USER_ADDED_SUCCESS": "User added succefully.",
+    "DATA_ALREADY_EXIST": " is already exist.",
+    "USER_UPDATE_SUCCESS": "User updated succefully.",
+    "USER_ACTIVE_SUCESS": "User activated succefully.",
+    "USER_INACTIVE_SUCESS": "User inactivated succefully.",
+
+    "CERTIFICATE_ADDED_SUCCESS": "Certificate Added succefully.",
+    "CERTIFICATE_UPDATE_SUCCESS": "Certificate updated succefully.",
+    "USERCERTIFICATION_ALREADY_EXIST": "UserCertifications already exist",
+
+    "ROLE_UPDATE_SUCCESS": "Role updated succefully.",
+    "ROLE_ADDED_SUCCESS": "Role added succefully.",
+    "ROLE_ACTIVE_SUCESS": "Role activated succefully.",
+    "ROLE_INACTIVE_SUCESS": "Role deactivated succefully.",
+
+    "PERMISSION_UPDATE_SUCCESS": "Permission updated succefully.",
+    "PERMISSION_ADDED_SUCCESS": "Permission added succefully.",
+
+    "TESTING_ADDED_SUCCESS": "Testing office added succefully.",
+    "TESTING_UPDATE_SUCCESS": "Testing office updated succefully.",
+    "TESTING_ACTIVE_SUCESS": "Testing office activated succefully.",
+    "TESTING_INACTIVE_SUCESS": "Testing office deactivated succefully.",
+    "TESTING_OFFICE_ALREADY_EXIST": "Testing office with Testing Office Number already exist",
+
+    "MASTER_ADDED_SUCCESS": "Master added succefully.",
+    "MASTER_UPDATE_SUCCESS": "Master updated succefully.",
+    "MASTER_ACTIVE_SUCESS": "Master activated succefully.",
+    "MASTER_INACTIVE_SUCESS": "Master deactivated succefully.",
+    "MASTER_ALREADY_EXIST": "Master with same username already exist",
+
+    "CLIENT_UPDATE_SUCCESS": "Client updated succefully.",
+    "CLIENT_ADDED_SUCCESS": "Client added succefully.",
+    "CLIENT_ACTIVE_SUCESS": "Client activated succefully.",
+    "CLIENT_INACTIVE_SUCESS": "Client deactivated succefully.",
+    "CLIENT_ALREADY_EXIST": "Client with same client number already exist.",
+
+    "LOCATION_UPDATE_SUCCESS": "Location updated succefully.",
+    "LOCATION_ADDED_SUCCESS": "Location added succefully.",
+    "LOCATION_ACTIVE_SUCESS": "Location activated succefully.",
+    "LOCATION_INACTIVE_SUCESS": "Location deactivated succefully.",
+
+    "BUILDING_UPDATE_SUCCESS": "Building updated succefully.",
+    "BUILDING_ADDED_SUCCESS": "Building added succefully.",
+    "BUILDING_ACTIVE_SUCESS": "Building activated succefully.",
+    "BUILDING_INACTIVE_SUCESS": "Building deactivated succefully.",
+
+    "SYSTEM_UPDATE_SUCCESS": "System updated succefully.",
+    "SYSTEM_ADDED_SUCCESS": "System added succefully.",
+    "SYSTEM_ACTIVE_SUCESS": "System activated succefully.",
+    "SYSTEM_INACTIVE_SUCESS": "System deactivated succefully.",
+
+    "INSPECTION_ALREADY_EXIST": "Inspection with same inspection number already exist.",
+    "INSPECTION_UPDATE_SUCCESS": "Inspection updated succefully.",
+    "INSPECTION_ADDED_SUCCESS": "Inspection added succefully.",
+    "INSPECTION_ACTIVE_SUCESS": "Inspection activated succefully.",
+    "INSPECTION_INACTIVE_SUCESS": "Inspection deactivated succefully.",
+
+    "SYSTEMELEMENT_ALREADY_EXIST": "System Element with same system element number already exist.",
+    "SYSTEMELEMENT_UPDATE_SUCCESS": "System Element updated succefully.",
+    "SYSTEMELEMENT_ADDED_SUCCESS": "System Element added succefully.",
+    "SYSTEMELEMENT_ACTIVE_SUCESS": "System Element activated succefully.",
+    "SYSTEMELEMENT_INACTIVE_SUCESS": "System Element deactivated succefully."
   }
 }

@@ -2,10 +2,8 @@ import React, { useState } from 'react';
 import { Row, Col, Card, Form, Button } from 'react-bootstrap';
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { Field, ErrorMessage } from "formik";
-import enhancer from "./ForgetPasswordEnhancer";
-
+import enhancer from "./ForgetPasswordEnhancer"; 
 import Layout from '../../layout/fullpage';
-
 import { Media, MediaGroup, Image, Logo } from '../../components';
 import axios from 'axios';
 

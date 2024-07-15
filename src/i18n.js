@@ -5,12 +5,12 @@ import translationES from "./locales/es/trans.json";
 import i18n from "i18next";
 
 i18n
-  .use(LanguageDetector)
+  .use(LanguageDetector) 
   .use(initReactI18next)
   .init({
     debug: true,
-    lng: "en",
-    fallbackLng: localStorage.getItem("lang") || "en",
+    // lng: "en",
+    fallbackLng: localStorage.getItem("i18nextLng") || "en",
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },

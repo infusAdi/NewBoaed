@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Row, Col, Card, Form, Button } from "react-bootstrap";
@@ -11,11 +11,17 @@ import {
   OverlineTitle,
   Logo,
 } from "../../components";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "../../components/LanguageSelector";
 import loginEnhancer from "./loginEnhancer";
 import { ErrorMessage } from "formik";
+import { useDispatch, useSelector } from "react-redux";
+import { fetching, success } from "../../reduxStore/reducer/fetchReducers";
+import { userLogin } from "../../apiServices/authServices";
+import { login } from "../../reduxStore/reducer/authReducer";
 
 const AuthLoginPage = (props) => {
   const { values, handleChange, submitForm, isValid } = props;
@@ -23,7 +29,10 @@ const AuthLoginPage = (props) => {
   // const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const { t } = useTranslation();
+  const isFetching = useSelector((state) => state.fetch.isFetching);
+  const isLoggedIn = useSelector((state) => state.user.isLoggin);
 
   // using Fetch Method
 
@@ -60,6 +69,42 @@ const AuthLoginPage = (props) => {
   //     }
   //   };
 
+  // Using APi Services
+  // async function submitHandler(e) {
+  //   dispatch(fetching(true));
+  //   e.preventDefault();
+  //   await submitForm();
+  //   if (isValid && values.username !== "") {
+  //     console.log(values)
+  //     await userLogin(values)
+  //       .then((data) => {
+  //         console.log(data)
+  //         if (data.token) {
+  //           console.log(data.token)
+  //           dispatch(login({ isLoggin: true, user: data }));
+  //           dispatch(success(t("AlertMessages.LOGIN_SUCCESS")));
+  //           navigate("/");
+  //         } else if (data.message === "inactive.") {
+  //           dispatch(error(t("AlertMessages.USER_INACTIVE")));
+  //         } else if (data.message === "Failed") {
+  //           dispatch(error(t("AlertMessages.LOGIN_FAILED")));
+  //         }
+  //       })
+  //       .catch((err) => dispatch(error(t("AlertMessages.NETWORK_ISSUE"))));
+  //   } else {
+  //     console.log("Please fill details");
+  //   }
+  //   dispatch(fetching(false));
+  // }
+
+  // useEffect(() => {
+  //   if (isLoggedIn) {
+  //     navigate("/");
+  //   }
+  // }, [isLoggedIn]);
+
+  //End
+
   // using Axios :::::::::::::::::::::::::::::::::
 
   const handleLogin = async (e) => {
@@ -83,12 +128,15 @@ const AuthLoginPage = (props) => {
 
         const data = response.data;
         const token = data.token;
+        const userName = data.firstName;
+
         if (token !== null && token !== undefined) {
           localStorage.setItem("authToken", token);
+          localStorage.setItem("UserName", userName);
           console.log(data);
           console.log("data is loaded");
           navigate("/"); // navigate to home
-          alert(`${values.UserName} Welcome to login page.`)
+          alert(`${values.UserName} Welcome to login page.`);
         } else {
           setError(
             "Username or Password in not found, Please check your credentials and try again."
@@ -201,6 +249,7 @@ const AuthLoginPage = (props) => {
                     </OverlineTitle>
                   </div>
                   <Row className="g-2">
+                    <LanguageSelector />
                     {/* <Col xxl="6">
                       <Button
                         href="#auth"
@@ -216,7 +265,6 @@ const AuthLoginPage = (props) => {
                       </Button>
                     </Col> */}
 
-                    <LanguageSelector />
                     {/* <Col xxl="6">
                       <Button
                         href="#auth"

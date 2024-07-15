@@ -177,9 +177,10 @@ function Menu() {
                 </MenuItem>
             </MenuSub>
         </MenuItem>
+        {/* //////////changes///////////////////////////////////////////////////////////////////// */}
         <MenuHeading text="Applications" />
         <MenuItem>
-            <MenuItemLink icon="chat-circle" text="Chat" to="/apps/chats"/>
+            <MenuItemLink icon="users" text="Client" to="client"/>
         </MenuItem>
         <MenuItem>
             <MenuItemLink icon="inbox" text="Inbox" to="/apps/inbox"/>
@@ -199,7 +200,7 @@ function Menu() {
             </MenuSub>
         </MenuItem>
         <MenuItem sub>
-            <MenuItemLink icon="users" text="User Management" onClick={menuToggle} sub/>
+            <MenuItemLink icon="chat-circle" text="User Management" onClick={menuToggle} sub/>
             <MenuSub>
                 <MenuItem>
                     <MenuItemLink text="Users List" to="/user-manage/user-list"/>

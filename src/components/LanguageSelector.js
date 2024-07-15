@@ -9,7 +9,7 @@ const LanguageSelector = () => {
 
   const languages = [
     { code: 'en', lang: 'English', flag : english },
-    { code: 'es', lang: 'German', flag : germany }, // Should this be 'Spanish'?
+    { code: 'es', lang: 'German', flag : germany }, 
   ];
 
   const changeLang = (lng) => {

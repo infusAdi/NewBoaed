@@ -104,6 +104,10 @@ import NotFound from "../pages/error/NotFound";
 import IconsPreview from "../pages/IconsPreview";
 import ResetPassword from "../pages/Reset Password/ResetPassword";
 import ForgetPassword from "../pages/Forgot Password/ForgetPassword";
+import Client from "../pages/client/Client";
+import ClientViewForm from "../pages/client/ClientViewForm";
+import ClientForm from "../pages/client/ClientForm";
+import ClientFormNew from "../pages/client/ClientFormNew";
 
 function Router() {
   return (
@@ -211,6 +215,30 @@ function Router() {
         <Route path="auth">
           <Route path="reset-password/:token" element={<ResetPassword />} />
         </Route>
+
+        {/* <Route path="client" element={<Client />}>
+          <Route path="view/:clientId" element={<ClientViewForm view={true} />} />
+          <Route path="edit/:clientId" element={<ClientForm edit={true} />} />
+        </Route> */}
+
+        <Route path="client" element={<Client />} />
+        <Route
+          path="client/view/:clientId"
+          element={<ClientViewForm view={true} />}
+        />
+        <Route
+          path="client/view/:clientId/client/edit/:clientId"
+          element={<ClientFormNew edit={true} />}
+        />
+        <Route
+          path="client/edit/:clientId"
+          element={<ClientFormNew edit={true} />}
+        />
+        <Route
+          path="client/add/:clientId"
+          element={<ClientFormNew/>}
+        />
+        <Route path="client/add" element={<ClientFormNew/>} />
 
         <Route path="icons" element={<IconsPreview />} />
         <Route path="not-found" element={<NotFound />} />
