@@ -136,7 +136,7 @@ const AuthLoginPage = (props) => {
           console.log(data);
           console.log("data is loaded");
           navigate("/"); // navigate to home
-          alert(`${values.UserName} Welcome to login page.`);
+          toast.success(`${values.UserName}, Welcome to login page.`);
         } else {
           setError(
             "Username or Password in not found, Please check your credentials and try again."
